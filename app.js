@@ -24,9 +24,8 @@ function doSomething(n){
     var element = document.getElementById(`note${n}`).classList;
     element.toggle('fadeOut');
     setTimeout(()=> {
-        document.getElementById(`note${n}`).innerHTML = ''
+        document.getElementById(`note${n}`).parentNode.removeChild(document.getElementById(`note${n}`))
     }, 1500);
-
 }
 
 function escapeHtml(text) { //Ersetzt Sonderzeichen. Schutz gegen injection. thx jbo5112. Funktioniert nicht ;( -> funktioniert doch, jedoch erkennt Firefox die Codierung
