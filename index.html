@@ -1,0 +1,26 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Einfache To-Do-Liste</title>
+</head>
+<body>
+    <h1>To-Do-Liste</h1>
+    <div class="img">
+        <img class="flags" src="https://flagcdn.com/48x36/de.png" alt="..." />
+    </div>
+    <div class="container">
+        <h2 id="thema">Aufgaben</h2>
+            <ul id="notes"></ul>
+    </div>
+    <form onsubmit="return false">
+        <input type="text" id="inputfield" placeholder="Trage hier deine Aufgabe ein!" autocomplete="off">
+        <input type="button" value="submit" id="submitBtn" class="nonPress" onclick= "submitBtnDo(document.getElementById('submitBtn').id)">
+    </form>
+</body>
+<script src="app.js"></script>
+<noscript>Du musst Javascript aktivieren!</noscript>
+</html>
+
