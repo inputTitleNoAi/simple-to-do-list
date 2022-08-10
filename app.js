@@ -2,9 +2,9 @@
 function buttonDo(id){
     this.id = id;
     //alert(id);
-    document.getElementById(id).classList.add('press'); //sucht das Element mit der ID "add und fügt bei der class "press" hinzu
-
-    document.getElementById(id).classList.remove('nonPress'); //entfernt die bereits vorhandene Zeichenkette "nonPress"
+    element =  document.getElementById(id).classList
+    element.add('press'); //sucht das Element mit der ID "add und fügt bei der class "press" hinzu
+    element.remove('nonPress'); //entfernt die bereits vorhandene Zeichenkette "nonPress"
     setTimeout(function(){      //Umkehrung des Prozesses nach 100ms (Button bewegt sich / erhält eine Druck-Animation)
         document.getElementById(id).classList.toggle('nonPress')
         document.getElementById(id).classList.remove('press');
